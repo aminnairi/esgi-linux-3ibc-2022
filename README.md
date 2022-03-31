@@ -40,3 +40,10 @@ Prevent users from accessing the following URLs:
 - https://www.pinterest.com
 - https://www.twitter.com
 - https://www.tiktok.com
+
+
+## Next lesson
+
+```bash
+git checkout lesson3
+```
