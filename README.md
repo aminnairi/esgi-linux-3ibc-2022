@@ -54,6 +54,8 @@ echo "Version is: $VERSION"
 # Version is 1.2.3
 ```
 
+## Exercises
+
 ### Exercise 1
 
 Create a script that accepts a temperature and a format. According to the format (celsius or fahrenheit), this script should output the correct transformed degres. This script should be available globally.
