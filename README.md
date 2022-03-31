@@ -31,16 +31,15 @@ Browsers are setup to read first the `/etc/hosts` file, this means that we can p
 
 ### Exercise 1
 
-Install a web server, either Apache, NGINX or another one of your choice. Edit the host file so that you can access your web server and display a page at http://website.local
-
-### Exercise 2
-
 Prevent users from accessing the following URLs:
 - https://www.instagram.com
 - https://www.pinterest.com
 - https://www.twitter.com
 - https://www.tiktok.com
 
+### Exercise 2
+
+Install a web server, either Apache, NGINX or another one of your choice. Edit the host file so that you can access your web server and display a page at http://website.local
 
 ## Next lesson
 
