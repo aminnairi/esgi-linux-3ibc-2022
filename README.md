@@ -786,6 +786,8 @@ Create a script that allows you to install the Archlinux distribution. The scrip
 - The locale
 - The console keymap
 - The hostname
+- The administrator
+- The users to add with their password
 
 ## Next lesson
 
