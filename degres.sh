@@ -6,22 +6,20 @@ FORMAT="$2"
 # If the first argument is empty
 if [ -z "$TEMPERATURE" ]
 then
-  echo "First argument cannot be empty."
-  exit 1
+  read -p "Temperature: " TEMPERATURE
 fi
 
 # If the second argument is empty
 if [ -z "$FORMAT" ]
 then
-  echo "Second argument cannot be empty."
-  exit 2
+  read -p "Format: " FORMAT
 fi
 
 # If the second argument is not "celsius" nor "fahrenheit"
 if [ "$FORMAT" != "celsius" -a "$FORMAT" != "fahrenheit" ]
 then
   echo "Second argument expected to be either celsius or fahrenheit"
-  exit 3
+  exit 1
 fi
 
 if [ "$FORMAT" == "celsius" ]
