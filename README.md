@@ -7,7 +7,7 @@
 A shell script ends with the `.sh` extension.
 
 ```bash
-echo -e "#!/bin/sh\necho Hello, world!" > main.sh
+echo -e "#!/bin/bash\necho Hello, world!" > main.sh
 ```
 
 ### Execution
@@ -32,7 +32,7 @@ Hello, world!
 A variable in a shell script is used to store data that can be accessed elsewhere in a script. Variables are declared using the equal sign and should not contain any space between and after that symbol. Variable can be surrounded by double or single quotes.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 MESSAGE="Hello, world!"
 
@@ -45,7 +45,7 @@ echo $MESSAGE
 There are a number of variables that are pre-defined in our script. We can get the name of the script.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 echo "Script name is $0"
 ```
@@ -58,7 +58,7 @@ Script name is main.sh
 We can get the first argument passed to our script.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 echo "First argument is $1"
 ```
@@ -71,7 +71,7 @@ First argument is here
 We can get the 10th argument passed to our script.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 echo "10th argument is ${10}"
 ```
@@ -84,7 +84,7 @@ sh main.sh a b c d e f g h i j
 We can get the number of arguments passed to our script.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 echo "Number of arguments: $#"
 ```
@@ -97,7 +97,7 @@ Number of arguments: 3
 We can get the status code from the last executed program of our script
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 echo "Hello"
 echo "Last status: $?"
@@ -111,7 +111,7 @@ Last status: 0
 We can get all of the arguments at the same time.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 echo "Arguments passed: $@"
 ```
@@ -126,7 +126,7 @@ Arguments passed: first second third
 Strings are used to store data. We can also use variables inside of our strings to create more complex ones.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 MAJOR_VERSION="1"
 MINOR_VERSION="2"
@@ -142,7 +142,7 @@ echo "Version is: $VERSION"
 We can use arithmetic operations to do calculus on our variables. All of the basic operations like additions, subtractions, divisions and multiplications are available.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FIRST="2"
 SECOND="4"
@@ -159,7 +159,7 @@ sh main.sh
 Operations and results are always integers.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 NUMERATOR="1"
 DENOMINATOR="2"
@@ -175,7 +175,7 @@ echo "$NUMERATOR divided by $DENOMINATOR is $RESULT"
 Also, if one of the operands is not an integer, the result will always be zero.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FIRST="1.1"
 SECOND="2.2"
@@ -196,7 +196,7 @@ You can have specific algorithm by using an if statement in your bash script to 
 We can check the equality of a value.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 VERSION="1"
 
@@ -211,7 +211,7 @@ fi
 We can check for the inequality of a value.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 VERSION="1"
 
@@ -226,7 +226,7 @@ fi
 We can check if a value is alphabetically greater than another one.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 VERSION="1"
 
@@ -241,7 +241,7 @@ fi
 We can check if a value is alphabetically lower than another one.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 VERSION="1"
 
@@ -256,7 +256,7 @@ fi
 We can check if an arithmetic value is greater than another one.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 COUNTER="10"
 
@@ -271,7 +271,7 @@ fi
 We can check if an arithmetic value is lower than another one.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 COUNTER="10"
 
@@ -286,7 +286,7 @@ fi
 We can check if an arithmetic value is equal to another one.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 COUNTER="10"
 
@@ -301,7 +301,7 @@ fi
 We can check if an arithmetic value is not equal to another one.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 COUNTER="10"
 
@@ -316,7 +316,7 @@ fi
 We can check if an arithmetic value is lower or equal to another one.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 COUNTER="10"
 
@@ -331,7 +331,7 @@ fi
 We can check if an arithmetic value is greater or equal to another one.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 COUNTER="10"
 
@@ -346,7 +346,7 @@ fi
 We can check if a file exists.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FILE_PATH="/home/user/file.txt"
 
@@ -361,7 +361,7 @@ fi
 We can check if a directory exists.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 DIRECTORY_PATH="/home/user/.vim"
 
@@ -376,7 +376,7 @@ fi
 We can check if a file or folder exists and is readable.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 DIRECTORY_PATH="/home/user/.vim"
 
@@ -391,7 +391,7 @@ fi
 We can check if a file or folder exists and is writeable.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 DIRECTORY_PATH="/home/user/.vim"
 
@@ -406,7 +406,7 @@ fi
 We can check if a file or folder exists and is executable.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FILE_PATH="/home/user/.local/bin/weather"
 
@@ -421,7 +421,7 @@ fi
 We can check if a file exists and is empty.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FILE_PATH="/home/user/.local/bin/weather"
 
@@ -436,7 +436,7 @@ fi
 We can check if a file exists and is not empty.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FILE_PATH="/home/user/.local/bin/weather"
 
@@ -451,7 +451,7 @@ fi
 We can combine tests using a logical AND.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FILE_PATH="/home/user/.local/bin/weather"
 DIRECTORY_PATH="/home/user/.vim"
@@ -467,7 +467,7 @@ fi
 We can combine tests using a logical OR.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FILE_PATH="/home/user/.local/bin/weather"
 DIRECTORY_PATH="/home/user/.vim"
@@ -483,7 +483,7 @@ fi
 We can reverse a test using a negation.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FILE_PATH="/home/user/.local/bin/weather"
 DIRECTORY_PATH="/home/user/.vim"
@@ -501,7 +501,7 @@ fi
 We can create and display an array to store multiple variables as a collection.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FRUITS=("banana" "apple" "pear")
 
@@ -515,7 +515,7 @@ Fruits: banana apple pear
 We can access each elements by their indexes.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FRUITS=("banana" "apple" "pear")
 
@@ -533,7 +533,7 @@ Third fruit: pear
 We can add values to an array.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FRUITS=("banana" "apple")
 FRUITS+=("pear")
@@ -548,7 +548,7 @@ Fruits: banana apple pear
 We can get the number of elements in an array.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FRUITS=("banana" "apple" "pear")
 
@@ -564,7 +564,7 @@ Number of fruits: 3
 It is possible to use the `for` program to loop through every argument given after the `in` option.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 for letter in a b c
 do
@@ -581,7 +581,7 @@ Letter is c
 We can loop through a range of numbers.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 for number in {1..5}
 do
@@ -600,7 +600,7 @@ Number is 5
 We can loop through a range of numbers with a given step.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 for number in {1..10..2}
 do
@@ -619,7 +619,7 @@ Number is 9
 We can loop a variable of strings separated by a space. Be aware that this variable should not be surrounded by double quotes in the loop.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 LANGUAGES="Haskell Elm Purescript Crystal V Nim"
 
@@ -641,7 +641,7 @@ I know Nim
 We can loop using a C-style flavor syntax.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 LIMIT="5"
 
@@ -662,7 +662,7 @@ Index is 5
 We can loop through an array.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 FRUITS=("banana" "apple" "pear")
 
@@ -694,7 +694,7 @@ Hello, world!
 We can read from the standard input and store the value in our script by using the `read` program.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 echo "First name:"
 
@@ -719,7 +719,7 @@ Your name is John DOE
 To prevent line return caused by the `echo` program, we can prompt the user with a question.
 
 ```bash
-#!/bin/sh
+#!/bin/bash
 
 read -p "First name: " FIRST_NAME
 read -p "Last name: " LAST_NAME
@@ -740,6 +740,8 @@ degres 15 fahrenheit
 degres 95 celsius
 35
 ```
+
+[Solution here](./degres.sh).
 
 ### Exercise 2
 
@@ -763,6 +765,8 @@ cat package.json
 }
 ```
 
+[Solution here](./createpackagejson.sh).
+
 ### Exercise 3
 
 Create a script that takes an IP address and a property and displays it on the standard output. The informations should be fetched from the https://ipapi.co API. This script should be available globally.
@@ -775,7 +779,9 @@ ipinfo 1.1.1.1 country_name
 Australia
 ```
 
-### Exercise 5
+[Solution here](./ipinfo.sh).
+
+### Exercise 4
 
 Create a script that allows you to install the Archlinux distribution. The script should be hosted on GitHub and fetched from a virtual machine that is running the latest version of Archlinux. The user should be able to customize the following:
 
